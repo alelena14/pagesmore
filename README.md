@@ -22,21 +22,21 @@ Make sure you have Git installed on your computer.
 
 ### Clone the repository
 ```sh
-git clone https://github.com/your-username/bookstore-website.git
+git clone https://github.com/alelena14/pagesmore
 ```
 
 ### Navigate to the project folder
 ```sh
-cd bookstore-website
+cd pagesmore
 ```
 
 ### Open the project in a browser
-You can open the `index.html` file directly in a web browser, or use a local development server for better performance.
+You can open the `project.html` file directly in a web browser, or use a local development server for better performance.
 
 #### Using VS Code Live Server (Recommended)
 1. Open the project in Visual Studio Code.
 2. Install the Live Server extension if you haven't already.
-3. Right-click `index.html` and select `Open with Live Server`.
+3. Right-click `project.html` and select `Open with Live Server`.
 
 #### Using Python HTTP Server (Alternative)
 If you have Python installed, you can start a local server:
