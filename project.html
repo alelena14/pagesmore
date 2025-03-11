@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pages&More</title>
+    <link href="style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar_container">
+            <img src="photos/logo.png" id="navbar_logo" alt="">
+            <div class="searchbar">
+                <form action="/">
+                    <input type="text" placeholder="Search..." name="Your book"> 
+                </form>
+            </div>
+            <ul class="navbar_menu">
+                <li class="navbar_btn">
+                    <a href="#" id="signupBtn" class="button">Sign Up</a>
+                </li>
+                <li class="navbar_btn">
+                    <a href="#" id="loginBtn" class="button">Log In</a>
+                </li>
+                <li class="navbar_btn" id="userProfile" style="display: none;">
+                    <span id="usernameDisplay"></span>
+                    <a href="#" id="logoutBtn" class="button">Log Out</a>
+                </li>
+            </ul>
+        </div>
+        
+
+        <div id="signupModal" class="modal">
+            <div class="modal-content">
+                <span id="closeSignup" class="close">&times;</span>
+                <h2>Sign Up</h2>
+                <form id="signupForm">
+                    <label for="signupUsername">Username:</label>
+                    <input type="text" id="signupUsername" name="username" required>
+                    <label for="signupPassword">Password:</label>
+                    <input type="password" id="signupPassword" name="password" required>
+                    <button type="submit">Sign Up</button>
+                    <p id="signupStatus"></p>
+                </form>
+            </div>
+        </div>
+    
+        <div id="loginModal" class="modal">
+            <div class="modal-content">
+                <span id="closeLogin" class="close">&times;</span>
+                <h2>Log In</h2>
+                <form id="loginForm">
+                    <label for="loginUsername">Username:</label>
+                    <input type="text" id="loginUsername" name="username" required>
+                    <label for="loginPassword">Password:</label>
+                    <input type="password" id="loginPassword" name="password" required>
+                    <button type="submit">Log In</button>
+                    <p id="loginStatus"></p>
+                </form>
+            </div>
+        </div>
+        
+    </nav>
+    <nav class="navbar2">
+        <div class="navbar_container2">
+            <div class="dropdown_menu">
+                <span><img src="photos/menu.png" alt="" id="menu_icon"></span>
+                <div class="dropdown_contents">
+                    <a href="project.html" class="dropdown_item">Home</a>                    
+                    <a href="books.html" class="dropdown_item">My Books</a>
+                    <a href="fav.html" class="dropdown_item">Favourites</a>
+                    <a href="genres.html" class="dropdown_item">Genres</a>
+                    <a href="#about_us" class="dropdown_item">About Us</a>
+                </div>
+            </div>
+            <ul class="navbar_menu2">
+             <li class="navbar_item">
+                 <a href="project.html" class="navbar_links">Home</a>
+             </li>
+             <li class="navbar_item">
+                 <a href="books.html" class="navbar_links">My Books</a>
+             </li>
+             <li class="navbar_item">
+                 <a href="fav.html" class="navbar_links">Favourites</a>
+             </li>
+             <li class="navbar_item">
+                 <a href="genres.html" class="navbar_links">Genres</a>
+             </li>
+            </ul> 
+     </div>
+    </nav>
+    <div class="main_body1">       
+        <img class="promo_img" alt="" src="https://images.contentstack.io/v3/assets/blt3d151d94546d0edd/blta0ddc4ade376f2e0/655683f7647c2865014e961c/LibbyDevices2023.png">
+        <div class="aux_mb1">
+            <p class="motto">"Explore worlds, ignite minds: Your journey starts at our library"~Pages&More</p>
+            <p class="text_mb1">Welcome to your friendly library. We have more than 50,000 free ebooks waiting to be discovered.</p>   
+        </div> 
+    </div>
+    <div class="main_body2">
+        <div class="all_text"><p id="anim">New Additions</p></div>
+        <div class="new_rls_books" id="new_additions">
+            <div class="book">
+                <a href="https://www.goodreads.com/book/show/75491526-king-of-sloth" target="_blank"><img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR0RMpzt_HoTmIbiKsS1G5yPXzkliCOKd4bmCjSBeh50Tsz1VT2" alt=""></a>
+                <p>King of Sloth by Ana Huang</p>
+            </div>
+            <div class="book">
+                <a href="https://www.goodreads.com/book/show/133286777-the-familiar" target="_blank"><img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTkl1l2jg2yTrEZ8mcgjoXSPndXQBH_pUIpBu5oCRFyHkBk14FS" alt=""></a>
+                <p>The Familiar: A Novel by Leigh Bardugo</p>
+            </div>
+            <div class="book">
+                <a href="https://www.goodreads.com/book/show/186872335-somehow?ref=nav_sb_ss_1_8" target="_blank"><img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTaptGY-BAEIAlBIyaCl7eun8PSfpKN2uZd-dVqYymR5-gbmSuV" alt=""></a>
+                <p>Somehow: Thoughts on Love by Anne Lamott</p>
+            </div>
+            <div class="book">
+                <a href="https://www.goodreads.com/book/show/61418422-three-summers" target="_blank"><img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSnAA7YsJLCfutQSqul6KoOMrtZrAG-oDNgT115VXN-7AqRFO1B" alt=""></a>
+                <p>Three Summers by Amra Sabic-El-Rayess and Laura L. Sullivan</p>
+            </div>
+            <div class="book">
+                <a href="https://www.goodreads.com/book/show/186872502-grown-woman-talk?ref=nav_sb_ss_1_11" target="_blank"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvFULU6tLrLh-K5zGD9pOdxfBQLAW1xGZkwCbD6nLpTq-JHUpk" alt=""></a>
+                <p>Grown woman talk by Sharon Malone</p>
+            </div>
+            <div class="book">
+                <a href="https://www.goodreads.com/book/show/176443330-daughter-of-mine?ref=nav_sb_ss_1_16" target="_blank"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZ2YJMFqMS0BXJCOJI0ObGctpciBnYYDxq9VsUTxevOy2UczhS" alt=""></a>
+                <p>Daughter of mine by Megan Miranda</p>
+            </div>
+            <div class="book">
+                <a href="https://www.goodreads.com/book/show/198494052-a-calamity-of-souls?ref=nav_sb_ss_1_17" target="_blank"><img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ4aQLCICC1D7OwOlb0smfqF2ftBcJ0tSgRZObu0RofNkJ1kfd5" alt=""></a>
+                <p>A Calamity of Souls by David Baldacci</p>
+            </div>
+        </div>
+        <div class="all_text"><a href="genres.html"><p>Genres (see more)</p></a></div>
+        <div class="browse_genres">
+            <div class="row">
+                <div class="column" ><a href="genres.html#Romance"><img src="https://manybooks.net/sites/default/files/styles/465x295sc/public/2017-12/genre-1.png?itok=0guEjINJ" alt=""><p>ROMANCE</p></a></div>
+                <div class="column" ><a href="genres.html#Adventure"><img src="https://manybooks.net/sites/default/files/styles/465x295sc/public/2017-12/genre-2.png?itok=iYg1o-UB" alt=""><p>ACTION & ADVENTURE</p></a></div>
+                <div class="column"><a href="genres.html#Mystery"><img src="https://manybooks.net/sites/default/files/styles/465x295sc/public/2017-12/genre-3.png?itok=DTx5oPEe" alt=""><p>MYSTERY & THRILLER</p></a></div>       
+                <div class="column"><a href="genres.html#Children's"><img src="https://manybooks.net/sites/default/files/styles/465x295sc/public/2017-12/genre-5.png?itok=ZsV-_DoX" alt=""><p>CHILDREN'S</p></a></div>
+                <div class="column"><a href="genres.html#Young_adults"><img src="https://manybooks.net/sites/default/files/styles/465x295sc/public/2017-12/genre-6.png?itok=YeKxttk6" alt=""><p>YOUNG ADULT</p></a></div>
+                <div class="column"><a href="genres.html#Fantasy"><img src="https://manybooks.net/sites/default/files/styles/465x295sc/public/2017-12/genre-7.png?itok=D-eS0PNM" alt=""><p>FANTASY</p></a></div>
+                <div class="column"><a href="genres.html#Horror"><img src="https://manybooks.net/sites/default/files/styles/465x295sc/public/2017-12/genre-9.png?itok=Qde8jfw-" alt=""><p>HORROR</p></a></div>
+                <div class="column"><a href="genres.html#Non_fiction"><img src="https://manybooks.net/sites/default/files/styles/465x295sc/public/2017-12/genre-11.png?itok=g4ML-Jmk" alt=""><p>NON-FICTION</p></a></div>
+                <div class="column"><a href="genres.html#Science_fiction"><img src="https://manybooks.net/sites/default/files/styles/465x295sc/public/2017-12/genre-12.png?itok=kmUC9Aiq" alt=""><p>SCIENCE FICTION</p></a></div>
+            </div>
+
+        </div>
+    </div>
+    <footer id="about_us">
+    <div class="footer">
+        <div class="footer1">
+            <p>JOIN OUR TEAM</p>
+            <span>Be the first to hear about new releases!</span>
+            <div class="searchbar_footer">
+                <form id="emailForm" action="/">
+                    <input type="text" id="emailInput" placeholder="Your email" name="Your email">
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer2">	
+                <div class="footer2_1">
+                    <p>COMPANY</p>
+                    <div>
+                        <span>About</span>
+                        <div class="instagram">
+                            <a href="https://www.instagram.com/alexandraec14/">
+                                <span>alexandraec14</span>
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="">
+                            </a>
+                        </div>
+                        <div class="whatsapp">
+                            <span>+40748657832</span>
+                            <img src="photos/whatsapp.png" alt="">
+                        </div>
+                        <div class="email">
+                            <span>cioritaelena14@gmail.com</span>
+                            <img src="photos/Gmail-Logo.png" style="width: 35px;" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="footer2_2">
+                    <span>GENERAL</span>
+                    <span>Terms of use</span>
+                    <span>Privacy Policy</span>
+                    <span id="copyright">&copy; Pages&More 2024-2034</span>
+                </div>
+                
+        </div>
+    </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

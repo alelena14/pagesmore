@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pages&More</title>
+    <link href="style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar_container">
+            <img src="photos/logo.png" id="navbar_logo" alt="">
+            <div class="searchbar">
+                <form action="/">
+                    <input type="text" placeholder="Search..." name="Your book"> 
+                </form>
+            </div>
+            <ul class="navbar_menu">
+                <li class="navbar_btn">
+                    <a href="#" id="signupBtn" class="button">Sign Up</a>
+                </li>
+                <li class="navbar_btn">
+                    <a href="#" id="loginBtn" class="button">Log In</a>
+                </li>
+                <li class="navbar_btn" id="userProfile" style="display: none;">
+                    <span id="usernameDisplay"></span>
+                    <a href="#" id="logoutBtn" class="button">Log Out</a>
+                </li>
+            </ul>
+        </div>
+        
+
+        <div id="signupModal" class="modal">
+            <div class="modal-content">
+                <span id="closeSignup" class="close">&times;</span>
+                <h2>Sign Up</h2>
+                <form id="signupForm">
+                    <label for="signupUsername">Username:</label>
+                    <input type="text" id="signupUsername" name="username" required>
+                    <label for="signupPassword">Password:</label>
+                    <input type="password" id="signupPassword" name="password" required>
+                    <button type="submit">Sign Up</button>
+                    <p id="signupStatus"></p>
+                </form>
+            </div>
+        </div>
+    
+        <div id="loginModal" class="modal">
+            <div class="modal-content">
+                <span id="closeLogin" class="close">&times;</span>
+                <h2>Log In</h2>
+                <form id="loginForm">
+                    <label for="loginUsername">Username:</label>
+                    <input type="text" id="loginUsername" name="username" required>
+                    <label for="loginPassword">Password:</label>
+                    <input type="password" id="loginPassword" name="password" required>
+                    <button type="submit">Log In</button>
+                    <p id="loginStatus"></p>
+                </form>
+            </div>
+        </div>
+        
+    </nav>
+    <nav class="navbar2">
+        <div class="navbar_container2">
+            <div class="dropdown_menu">
+                <span><img src="photos/menu.png" alt="" id="menu_icon"></span>
+                <div class="dropdown_contents">
+                    <a href="project.html" class="dropdown_item">Home</a>                    
+                    <a href="books.html" class="dropdown_item">My Books</a>
+                    <a href="fav.html" class="dropdown_item">Favourites</a>
+                    <a href="genres.html" class="dropdown_item">Genres</a>
+                    <a href="#about_us" class="dropdown_item">About Us</a>  
+                </div>
+            </div>
+            <ul class="navbar_menu2">
+             <li class="navbar_item">
+                 <a href="project.html" class="navbar_links">Home</a>
+             </li>
+             <li class="navbar_item">
+                 <a href="books.html" class="navbar_links">My Books</a>
+             </li>
+             <li class="navbar_item">
+                 <a href="fav.html" class="navbar_links">Favourites</a>
+             </li>
+             <li class="navbar_item">
+                 <a href="genres.html" class="navbar_links">Genres</a>
+             </li>
+            </ul> 
+     </div>
+    </nav>
+
+    
+    <div class="main_fav">
+        <div class="fav_photo">
+            <img src="https://images.contentstack.io/v3/assets/blt64b2de096a6f4663/bltf9c2eeb9734b3902/656649461204cd9439ca6267/best_books_of_2023.png" alt="">
+            <h1>BEST OF 2023</h1>
+            <div class="mini_text">
+                <p>Each week, our editors and critics recommend the most captivating, 
+                    notable, brilliant, thought-provoking, and talked-about books. Now, as 
+                    2023 comes to an end, we've chosen a dozen essential reads in nonfiction 
+                    and a dozen, too, in fiction and poetry.</p>
+                <div>
+                    <div class="menu_fav">
+
+                        <div class="dropdown_menu">
+                            <p>PREVIOUS YEARS</p>
+                            <div class="dropdown_contents">
+                                <div>
+                                    <a href="https://www.goodreads.com/choiceawards/best-books-2022" target="_blank" class="dropdown_item">2022 AWARDS</a>                    
+                                    <a href="https://www.goodreads.com/choiceawards/best-books-2021" target="_blank" class="dropdown_item">2021 AWARDS</a>
+                                    <a href="https://www.goodreads.com/choiceawards/best-books-2020" target="_blank" class="dropdown_item">2020 AWARDS</a>
+                                    <a href="https://www.goodreads.com/choiceawards/best-books-2019" target="_blank" class="dropdown_item">2019 AWARDS</a>
+                                    <a href="https://www.goodreads.com/choiceawards/best-books-2018" target="_blank" class="dropdown_item">2018 AWARDS</a> 
+                                    <a href="https://www.goodreads.com/choiceawards/best-books-2017" target="_blank" class="dropdown_item">2017 AWARDS</a> 
+                                    <a href="https://www.goodreads.com/choiceawards/best-books-2016" target="_blank" class="dropdown_item">2016 AWARDS</a>
+                                    <a href="https://www.goodreads.com/choiceawards/best-books-2015" target="_blank" class="dropdown_item">2015 AWARDS</a>
+
+                                </div>    
+                            </div>
+                        </div>
+
+                        <div class="dropdown_menu">
+                            <p>VOTING SCHEDULE</p>
+                            <div class="dropdown_contents">
+                                <div>
+                                  <span>Round I:Nov.14-26</span>
+                                  <span>Round II:Nov.28-Dec.3</span>
+                                  <span>Winners Announced:Dec.7</span>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="dropdown_menu">
+                            <p>"BEST OF" LISTS</p>
+                            <div class="dropdown_contents">
+                                <div>
+                                    <a href="https://time.com/collection/must-read-books-2023/" class="dropdown_item">Time's 100 Must-Read Books of 2023</a>                    
+                                    <a href="https://best-books.publishersweekly.com/pw/best-books/2023" class="dropdown_item">Publishers Weekly's Best Books of 2023</a>
+                                    <a href="https://www.oprahdaily.com/entertainment/books/a45758032/best-books-of-2023/" class="dropdown_item">Oprah Daily's Best Books of 2023</a>
+                                    <a href="https://www.amazon.com/best-books-of-2023/b?ie=UTF8&node=17276804011" class="dropdown_item">Amazon Editor's Best Books of 2023</a>
+                                    <a href="https://www.audible.com/ep/best-of-the-year-editorial-2023" class="dropdown_item">Audible's Best Audiobooks of 2023</a>  
+                                </div>    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="fav_book">
+                <h2>Best Romance</h2>
+                <div class="info_book">
+                    <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1660145160l/61718053.jpg" alt="">
+                    <div class="desc_book">
+                        <span class="winner">WINNER 157,687 votes</span>
+                        <article>
+                        <h2 class="book_title">Happy Place by Emily Henry</h2>
+                        <p>Emily Henry clocks her third straight victory in the category with this tale of a couple who have 
+                            broken up but don't want to harsh the vibe on an upcoming trip with friends. The result is a clever 
+                            variation on the old fake-dating trope. Henry's three-in-a-row streak is extra impressive when you 
+                            consider that she's published only four adult romances in total.</p>
+                        </article>
+                    </div>
+                </div>
+            </div>
+
+            <div class="fav_book">
+                <h2>Best Romantasy</h2>
+                <div class="info_book">
+                    <div class="desc_book">
+                        <span class="winner">WINNER 397,565 votes</span>
+                        <article>
+                        <h2 class="book_title">Fourth Wing by Rebecca Yarros</h2>
+                        <p>This year's most unstoppable book, Rebecca Yarros' dragon-rider 
+                            fantasy/romance surfed an atmospheric river of BookTok support straight 
+                            to the bestseller stratosphere. Yarros' astonishing success has earned 
+                            the author a massive fandom of devoted readers, and the book helped popularize
+                             the emerging consensus term for 2023's hottest hybrid genre: romantasy.</p>
+                        </article>
+                    </div>
+                    <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1701980900i/61431922.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="fav_book">
+                <h2>Best Fiction</h2>
+                <div class="info_book">
+                    <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1671336608l/62047984.jpg" alt="">
+                    <div class="desc_book">
+                        <span class="winner">WINNER 200,722 votes</span>
+                        <article>
+                        <h2 class="book_title">Yellowface
+                            by R.F. Kuang</h2>
+                        <p>R.F. Kuang continues her astonishing ascent from genre specialist to literary sensation with Yellowface, a lacerating parable about the publishing industry itself. A combination of satire, metafiction, and slow-burn thriller, the book ultimately delivers a sly cultural critique concerning race and tokenism in the book business.</p>
+                        </article>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="fav_book">
+                <h2>Best Historical Fiction</h2>
+                <div class="info_book">
+                    <div class="desc_book">
+                        <span class="winner">WINNER 62,211 votes</span>
+                        <article>
+                        <h2 class="book_title">Weyward
+                            by Emilia Hart</h2>
+                        <p>An artful variation on the historical fiction novel, Emilia Hart's Weyward follows three desperate women along three timeline threads—separate but related—in 1619, 1942, and 2019. Hart's story stitches back and forth in time as the women encounter an abiding feminine power, deeply rooted in the land. Bonus tip: Look up the definition of weyward for some witchy etymology.</p>
+                        </article>
+                    </div>
+                    <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1677756582l/60654349._SY475_.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="fav_book">
+                <h2>Best Mystery & Thriller</h2>
+                <div class="info_book">
+                    <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1664729357l/62848145._SY475_.jpg" alt="">
+                    <div class="desc_book">
+                        <span class="winner">WINNER 86,468 votes</span>
+                        <article>
+                        <h2 class="book_title">The Housemaid's Secret
+                            by Freida McFadden</h2>
+                        <p>Sequel to The Housemaid—a nominee last year in the Mystery & Thriller category—The Housemaid's Secret is the first Goodreads Choice Award for author (and practicing physician) Freida McFadden. The new novel finds maid-with-a-secret Millie Calloway in another dodgy situation as author McFadden delivers her patented blend of psychological suspense and switchback plot twists.</p>
+                        </article>
+                    </div>
+                </div>
+            </div>
+
+            <div class="fav_book">
+                <h2>Best Fantasy</h2>
+                <div class="info_book">
+                    <div class="desc_book">
+                        <span class="winner">WINNER 75,800 votes</span>
+                        <article>
+                        <h2 class="book_title">Hell Bent
+                            by Leigh Bardugo</h2>
+                        <p>Leigh Bardugo is back on top with Hell Bent, the winner of this year's Fantasy category. Not coincidentally, the book is the sequel to Ninth House, 2019's winner in Fantasy. Bardugo's beloved series has established a new trajectory for dark academia books, promising Ivy League hopefuls a world of secret societies, occult rituals, and interdimensional portals.</p>
+                        </article>
+                    </div>
+                    <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1648744814l/60652997.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="fav_book">
+                <h2>Best Science Fiction</h2>
+                <div class="info_book">
+                    <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1699617963l/60784549._SY475_.jpg" alt="">
+                    <div class="desc_book">
+                        <span class="winner">WINNER 57,535 votes</span>
+                        <article>
+                        <h2 class="book_title">In the Lives of Puppets
+                            by T.J. Klune</h2>
+                        <p>With its skillful mix of fantasy and science fiction elements, T.J. Klune's innovative novel brings the core concepts of the Pinocchio legend into the notional environs of the 21st century and beyond. Androids! Anxieties! Found families! Klune has an intuitive feel for this kind of modern mythmaking, bringing contemporary resonance to this classic tale.</p>
+                        </article>
+                    </div>
+                </div>
+            </div>
+
+            <div class="fav_book">
+                <h2>Best Horror</h2>
+                <div class="info_book">
+                    <div class="desc_book">
+                        <span class="winner">WINNER 77,993 votes</span>
+                        <article>
+                        <h2 class="book_title">Holly
+                            by Stephen King</h2>
+                        <p>As elder statesman and genre godfather, Stephen King is a familiar name in the Horror category. He returns this year with Holly, which pits an old fan-favorite character—private investigator Holly Gibney—against a pair of uniquely depraved antagonists. King's book is part character study, part thriller, and part cautionary tale concerning octogenarian academics.</p>
+                        </article>
+                    </div>
+                    <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1674418461l/65916344.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="fav_book">
+                <h2>Best Young Adult</h2>
+                <div class="info_book">
+                    <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1678378842l/60683957.jpg" alt="">
+                    <div class="desc_book">
+                        <span class="winner">WINNER 68,736 votes</span>
+                        <article>
+                        <h2 class="book_title">Check & Mate
+                            by Ali Hazelwood</h2>
+                        <p>Author Ali Hazelwood made her name in the book business by writing smart love stories for discerning adult readers. So, it's an encouraging development that her first venture into the young adult aisles is proving equally popular. Check & Mate follows reluctant chess genius Mallory Greenleaf as she deploys gambits and strategies in the game of life. Smart kids need love too, you know.</p>
+                        </article>
+                    </div>
+                </div>
+            </div>
+
+            <div class="fav_book">
+                <h2>Best Nonfiction</h2>
+                <div class="info_book">
+                    <div class="desc_book">
+                        <span class="winner">WINNER 25,910 votes</span>
+                        <article>
+                        <h2 class="book_title">Poverty, by America
+                            by Matthew Desmond</h2>
+                        <p>by Matthew Desmond (Goodreads Author)
+                            Sociologist and Pulitzer Prize winner Matthew Desmond earns this year's prize with the kind of book that future historians will be citing for generations. Desmond asks some deeply uncomfortable questions about poverty in the United States, then persuasively argues for a bold new agenda of shared prosperity.</p>
+                        </article>
+                        </div>
+                    <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1665696294l/61358638._SY475_.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="fav_book">
+                <h2>Best Memoir & Autobiography</h2>
+                <div class="info_book">
+                    <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1689090540l/63133205._SY475_.jpg" alt="">
+                    <div class="desc_book">
+                        <span class="winner">WINNER 132,867 votes</span>
+                        <article>
+                        <h2 class="book_title">The Woman in Me
+                            by Britney Spears</h2>
+                        <p>One of several high-profile celebrity memoirs to drop this year, Britney Spears' big book was ecstatically received by fans—and it did quite well with the critics, too. If you're keeping score at home, Prince Harry's memoir, Spare, came in second place in this category. Mathematically, that's American Pop Princess > British Royal Scion—for Goodreads voters, anyway.</p>
+                        </article>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <footer id="about_us">
+        <div class="footer">
+            <div class="footer1">
+                <p>JOIN OUR TEAM</p>
+                <span>Be the first to hear about new releases!</span>
+                <div class="searchbar_footer">
+                    <form id="emailForm" action="/">
+                        <input type="text" id="emailInput" placeholder="Your email" name="Your email">
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer2">	
+                    <div class="footer2_1">
+                        <p>COMPANY</p>
+                        <div>
+                            <span>About</span>
+                            <div class="instagram">
+                                <a href="https://www.instagram.com/alexandraec14/">
+                                    <span>alexandraec14</span>
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="">
+                                </a>
+                            </div>
+                            <div class="whatsapp">
+                                <span>+40748657832</span>
+                                <img src="photos/whatsapp.png" alt="">
+                            </div>
+                            <div class="email">
+                                <span>cioritaelena14@gmail.com</span>
+                                <img src="photos/Gmail-Logo.png" style="width: 35px;" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer2_2">
+                        <span>GENERAL</span>
+                        <span>Terms of use</span>
+                        <span>Privacy Policy</span>
+                        <span id="copyright">&copy; Pages&More 2024-2034</span>
+                    </div>
+                    
+            </div>
+        </div>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+    </html>

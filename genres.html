@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pages&More</title>
+    <link href="style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar_container">
+            <img src="photos/logo.png" id="navbar_logo" alt="">
+            <div class="searchbar">
+                <form action="/">
+                    <input type="text" placeholder="Search..." name="Your book"> 
+                </form>
+            </div>
+            <ul class="navbar_menu">
+                <li class="navbar_btn">
+                    <a href="#" id="signupBtn" class="button">Sign Up</a>
+                </li>
+                <li class="navbar_btn">
+                    <a href="#" id="loginBtn" class="button">Log In</a>
+                </li>
+                <li class="navbar_btn" id="userProfile" style="display: none;">
+                    <span id="usernameDisplay"></span>
+                    <a href="#" id="logoutBtn" class="button">Log Out</a>
+                </li>
+            </ul>
+        </div>
+        
+
+        <div id="signupModal" class="modal">
+            <div class="modal-content">
+                <span id="closeSignup" class="close">&times;</span>
+                <h2>Sign Up</h2>
+                <form id="signupForm">
+                    <label for="signupUsername">Username:</label>
+                    <input type="text" id="signupUsername" name="username" required>
+                    <label for="signupPassword">Password:</label>
+                    <input type="password" id="signupPassword" name="password" required>
+                    <button type="submit">Sign Up</button>
+                    <p id="signupStatus"></p>
+                </form>
+            </div>
+        </div>
+    
+        <div id="loginModal" class="modal">
+            <div class="modal-content">
+                <span id="closeLogin" class="close">&times;</span>
+                <h2>Log In</h2>
+                <form id="loginForm">
+                    <label for="loginUsername">Username:</label>
+                    <input type="text" id="loginUsername" name="username" required>
+                    <label for="loginPassword">Password:</label>
+                    <input type="password" id="loginPassword" name="password" required>
+                    <button type="submit">Log In</button>
+                    <p id="loginStatus"></p>
+                </form>
+            </div>
+        </div>
+        
+    </nav>
+    <nav class="navbar2">
+        <div class="navbar_container2">
+            <div class="dropdown_menu">
+                <span><img src="photos/menu.png" alt="" id="menu_icon"></span>
+                <div class="dropdown_contents">
+                    <a href="project.html" class="dropdown_item">Home</a>                    
+                    <a href="books.html" class="dropdown_item">My Books</a>
+                    <a href="fav.html" class="dropdown_item">Favourites</a>
+                    <a href="genres.html" class="dropdown_item">Genres</a>
+                    <a href="#about_us" class="dropdown_item">About Us</a>
+                </div>
+            </div>
+            <ul class="navbar_menu2">
+             <li class="navbar_item">
+                 <a href="project.html" class="navbar_links">Home</a>
+             </li>
+             <li class="navbar_item">
+                 <a href="books.html" class="navbar_links">My Books</a>
+             </li>
+             <li class="navbar_item">
+                 <a href="fav.html" class="navbar_links">Favourites</a>
+             </li>
+             <li class="navbar_item">
+                 <a href="genres.html" class="navbar_links">Genres</a>
+             </li>
+            </ul> 
+     </div>
+    </nav>
+
+    
+    <div class="main_genres">
+        <div class="genres_menu">
+            <nav>
+                <span>All genres</span>
+                <a href="#Romance"><p>Romance</p></a>
+                <a href="#Science_fiction"><p>Science fiction</p></a>
+                <a href="#Horror"><p>Horror</p></a>
+                <a href="#Fantasy"><p>Fantasy</p></a>
+                <a href="#Mystery"><p>Mystery</p></a>
+                <a href="#Adventure"><p>Adventure</p></a>
+                <a href="#Young_adults"><p>Young Adults</p></a>
+                <a href="#Non_fiction"><p>Non-fiction</p></a>
+                <a href="#History"><p>History</p></a>
+                <a href="#Children"><p>Children's</p></a>
+                <a href="#Action"><p>Action</p></a>
+                <a href="#Dystopian"><p>Dystopian</p></a>
+                <a href="#Biography"><p>Biography</p></a>
+                <a href="#Graphic"><p>Graphic novel</p></a>
+            </nav>
+        </div>
+        <div class="genress">
+                <div class="all_text" id="Romance"><p>Romance</p></div>
+                <div class="new_rls_books">
+                    <div class="book" data-tooltip="Click to add it to your library!">
+                        <a href=""><img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSffJf_AvaMMJuipcHMBBNFrwAzlZY8Mq1Ntp8srNOvfiWW5-JN" alt=""></a>
+                        <p class="bookTitle">Beach Read</p>
+                        <p>by</p>
+                        <p class="book_author">Emily Henry</p>
+                    </div>
+                    <div class="book" data-tooltip="Click to add it to your library!">
+                        <a href=""><img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRF2_V_H6aBrxHR1rjM5DiOm0fYg0jrhC2xzVKhp0LbS9WKRXxG" alt=""></a>
+                        <p class="bookTitle">Get a life, Chloe Brown</p>
+                        <p>by</p>
+                        <p class="book_author">Talia Hibbert</p>
+                    </div>
+                    <div class="book" data-tooltip="Click to add it to your library!">
+                        <a href=""><img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQsgrIRiEWm-sVvfycSQG9TMI0OLzdOxuuySrAuRRFUPGGb62J1" alt=""></a>
+                        <p class="bookTitle">Just for the summer</p> 
+                        <p>by</p> 
+                        <p class="book_author">Abby Jimenez</p>
+                    </div>
+                    <div class="book" data-tooltip="Click to add it to your library!">
+                        <a href=""><img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQfdZc4JiV7uKISPmkvu4X1DXwVa3Mha37mYR6JDODnZncfqaZu" alt=""></a>
+                        <p class="bookTitle">This could be us</p>
+                        <p>by</p> 
+                        <p class="book_author">Kennedy Ryan</p>
+                    </div>
+                    <div class="book" data-tooltip="Click to add it to your library!">
+                        <a href=""><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZyEUScaTnehxsV6AZzsPhtro2xxn6QCwlA5J700ws1Mccylkw" alt=""></a>                    
+                        <p class="bookTitle">A court of thorns and roses</p> 
+                    <p>by</p> 
+                    <p class="book_author">Sarah J. Maas</p>
+                    </div>
+                    <div class="book" data-tooltip="Click to add it to your library!">
+                        <a href=""><img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQvVy39kLxq2FZVrc4vfj2K3Do5eXPgB3qDTRuesZtR1lpr5nto" alt=""></a>                    
+                        <p class="bookTitle">Happily never after</p> <p>by</p> <p class="book_author">Lynn Painter</p>
+                    </div>
+                    <div class="book" data-tooltip="Click to add it to your library!">
+                        <a href=""><img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSdpoeDvBQAz0Moi9U5jJzP-T-L46-S69_e2ZDswZb6A8clE-ic" alt=""></a>
+                        <p class="bookTitle">Wild love</p> <p>by</p> <p class="book_author">Elsie Silver</p>
+                    </div>
+                </div>
+
+
+
+                <div class="all_text" id="Science_fiction"><p>Science Fiction</p></div>
+                <div class="new_rls_books">
+                    <div class="book" data-tooltip="Click to add it to your library!">
+                        <a href=""><img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTyO7P_jq5ZPRoH-ddASjAsUMtlAxiYyWDsaR9MgWenCdj6tklI" alt=""></a>
+                        <p class="bookTitle">DUNE</p> <p>by</p> <p class="book_author">Frank Herbert</p>
+                    </div>
+                    <div class="book" data-tooltip="Click to add it to your library!">
+                        <a href=""><img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRn04Bdz7hdOXK5977E27GmiXW-gv92Zz8GU_8O3a6FROD4ahby" alt=""></a>
+                        <p class="bookTitle">This is how you lose the time war</p> <p>by</p> <p class="book_author">Amal El-Mohtar and Max Gladstone</p>
+                    </div>
+                    <div class="book" data-tooltip="Click to add it to your library!">
+                        <a href=""><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkvBFatcfXQFvfHnYnOBjHhgM1xjVHIQ_wy325Nk-H6s2th2oj" alt=""></a>
+                        <p class="bookTitle">Exhalation</p> <p>by</p> <p class="book_author">Ted Chiang</p>
+                    </div>
+                    <div class="book" data-tooltip="Click to add it to your library!">
+                        <a href=""><img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSxgqMgrk37l6v0t6YcCtJuGXeUqrcxTgfeDpImcKV0xL9RT2hD" alt=""></a>
+                        <p class="bookTitle">An unkidness of ghosts</p> <p>by</p> <p class="book_author">Rivers Solomon</p>
+                    </div>
+                    <div class="book" data-tooltip="Click to add it to your library!">
+                        <a href=""><img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT0J2TuNFMVqOxTdqWK2YMvHxid9yPRb6A7S6xmh4WqgpXt5IoJ" alt=""></a>
+                        <p class="bookTitle">The moon is a harsh mistress</p> <p>by</p> <p class="book_author">Brian David Scates</p>
+                    </div>
+                </div>
+
+
+
+            <div class="all_text" id="Horror"><p>Horror</p></div>
+            <div class="new_rls_books">
+                <div class="book" data-tooltip="Click to add it to your library!">
+                    <a href=""><img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ-pchMY0IEW5RmLvyTff-2r2TeDuOm4p0iN5_s5denZ87MNesm" alt=""></a>
+                    <p class="bookTitle">Bird box</p> <p>by</p> <p class="book_author">Josh Malerman</p>
+                </div>
+                <div class="book" data-tooltip="Click to add it to your library!">
+                    <a href=""><img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRT4Q-ifCFLZKmVHsEkujowGa1MRDMBtQMk_BY7qlbKsiyXkEGu" alt=""></a>
+                    <p class="bookTitle">The only good indians</p> <p>by</p> <p class="book_author">Stephen Graham Jones</p>
+                </div>
+                <div class="book" data-tooltip="Click to add it to your library!">
+                    <a href=""><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5tu4okXHqHV-7PBTWtMIzICJWnvP10jI0-13-qXVgKQvFAaC0" alt=""></a>
+                    <p class="bookTitle">The Hunger</p> <p>by</p> <p class="book_author">Alma Katsu</p>
+                </div>
+                <div class="book" data-tooltip="Click to add it to your library!">
+                    <a href=""><img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSEEJRNXgiynOWYiw8vdj8v_NtgxMbrscmmHGq0QlJzcjqd3ODz" alt=""></a>
+                    <p class="bookTitle">Penpal</p> <p>by</p> <p class="book_author">Dathan Auerbach</p>
+                </div>
+                <div class="book" data-tooltip="Click to add it to your library!">
+                    <a href=""><img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTFp40V6K-UQQIYAeV0TjBFS0MhbtbveAKe3w_ToHhGvttBaWFM" alt=""></a>
+                    <p class="bookTitle">Something Wicked This Way Comes</p> <p>by</p> <p class="book_author">Ray Bradbury</p>
+                </div>
+                <div class="book" data-tooltip="Click to add it to your library!">
+                    <a href=""><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbMbtNagZDTDQjpiJ9LNPLpveCWE7RARKTM2SBv7HLr5pt5ff1" alt=""></a>
+                    <p class="bookTitle">The Ballad Of Black Tom</p> <p>by</p> <p class="book_author">Victor LaValle</p>
+                </div>
+            </div>
+
+            <div class="all_text" id="Fantasy"><p>Fantasy</p></div>
+            <div class="new_rls_books">
+                <div class="book" data-tooltip="Click to add it to your library!">
+                    <a href=""><img src="https://cdn.dc5.ro/img-prod/1388590327-0.jpeg" alt=""></a>
+                    <p class="bookTitle">A touch of darkness</p> <p>by</p> <p class="book_author">Scarlett St. Clair</p>
+                </div>
+                <div class="book" data-tooltip="Click to add it to your library!">
+                    <a href=""><img src="https://cdn.dc5.ro/img-prod/309149972-1.jpeg" alt=""></a>
+                    <p class="bookTitle">The priority of the orange tree</p> <p>by</p> <p class="book_author">Samantha Shannon</p>
+                </div>
+                <div class="book" data-tooltip="Click to add it to your library!">
+                    <a href=""><img src="https://cdn.dc5.ro/img-prod/2358901670-0.jpeg" alt=""></a>
+                    <p class="bookTitle">Two twisted crowns</p> <p>by</p> <p class="book_author">Rachel Gillig</p>
+                </div>
+                <div class="book" data-tooltip="Click to add it to your library!">
+                    <a href=""><img src="https://cdn.dc5.ro/img-prod/233685-0.jpeg" alt=""></a>
+                    <p class="bookTitle">After dark</p> <p>by</p> <p class="book_author">Murakami</p>
+                </div>
+                <div class="book" data-tooltip="Click to add it to your library!">
+                    <a href=""><img src="https://cdn.dc5.ro/img-prod/2761109958-0.jpeg" alt=""></a>
+                    <p class="bookTitle">Pilar of ash</p> <p>by</p> <p class="book_author">H. M. Long</p>
+                </div>
+                <div class="book" data-tooltip="Click to add it to your library!">
+                    <a href=""><img src="https://cdn.dc5.ro/img-prod/2213985167-0.jpeg" alt=""></a>
+                    <p class="bookTitle"> Queen of myth and monsters</p> <p>by</p> <p class="book_author">Scarlett St. Clair</p>
+                </div>
+            </div>
+            
+        
+
+            <div class="all_text" id="Mystery"><p>Mystery</p></div>
+            <div class="new_rls_books">
+                <div class="book" data-tooltip="Click to add it to your library!">
+                    <a href=""><img src="https://cdn.dc5.ro/img-prod/3124463626-0.jpeg" alt=""></a>
+                    <p class="bookTitle">Kill for me kill for you</p> <p>by</p> <p class="book_author">Steve cavanagh</p>
+                </div>
+                <div class="book" data-tooltip="Click to add it to your library!">
+                    <a href=""><img src="https://cdn.dc5.ro/img-prod/3121939684-0.jpeg" alt=""></a>
+                    <p class="bookTitle">A clock stopped dead</p> <p>by</p> <p class="book_author">J. M. Hall</p>
+                </div>
+                <div class="book" data-tooltip="Click to add it to your library!">
+                    <a href=""><img src="https://cdn.dc5.ro/img-prod/3072401405-0.jpeg" alt=""></a>
+                    <p class="bookTitle">How to kill a guy in ten ways</p> <p>by</p> <p class="book_author">Eve Kellman</p>
+                </div>
+                <div class="book" data-tooltip="Click to add it to your library!">
+                    <a href=""><img src="https://cdn.dc5.ro/img-prod/3071173287-0.jpeg" alt=""></a>
+                    <p class="bookTitle">Őszi borzongás</p> <p>by</p> <p class="book_author">Agatha Christie</p>
+                </div>
+                <div class="book" data-tooltip="Click to add it to your library!">
+                    <a href=""><img src="https://cdn.dc5.ro/img-prod/3130103720-0.jpeg" alt=""></a>
+                    <p class="bookTitle">The last girl left</p> <p>by</p> <p class="book_author">A. M. Strong and Sonya Sargent</p>
+                </div>
+                <div class="book" data-tooltip="Click to add it to your library!">
+                    <a href=""><img src="https://cdn.dc5.ro/img-prod/3130103728-0.jpeg" alt=""></a>
+                    <p class="bookTitle">Back from dead</p> <p>by</p> <p class="book_author">Heidi Amsinck</p>
+                </div>
+                <div class="book" data-tooltip="Click to add it to your library!">
+                    <a href=""><img src="https://cdn.dc5.ro/img-prod/3099853747-0.jpeg" alt=""></a>
+                    <p class="bookTitle">The gathering</p> <p>by</p> <p class="book_author">C. J. Tudor</p>
+                </div>
+            </div>
+            
+
+
+            <div class="all_text" id="Adventure"><p>Adventure</p></div>
+            <div class="new_rls_books">
+                <div class="book" data-tooltip="Click to add it to your library!">
+                    <a href=""><img src="https://cdn.dc5.ro/img-prod/2834559756-0.jpeg" alt=""></a>
+                    <p class="bookTitle">Montana</p> <p>by</p> <p class="book_author">William W. Johnstone and J.A.Johnstone</p>
+                </div>
+                <div class="book" data-tooltip="Click to add it to your library!">
+                    <a href=""><img src="https://cdn.dc5.ro/img-prod/2725534248-0.jpeg" alt=""></a>
+                    <p class="bookTitle">Argylle</p> <p>by</p> <p class="book_author">Elly Conway</p>
+                </div>
+                <div class="book" data-tooltip="Click to add it to your library!">
+                    <a href=""><img src="https://cdn.dc5.ro/img-prod/2495175319-0.jpeg" alt=""></a>
+                    <p class="bookTitle">The fate of a king</p> <p>by</p> <p class="book_author">K.M.Ashman</p>
+                </div>
+                <div class="book" data-tooltip="Click to add it to your library!">
+                    <a href=""><img src="https://cdn.dc5.ro/img-prod/2345812223-0.jpeg" alt=""></a>
+                    <p class="bookTitle">To the far blue mountains</p> <p>by</p> <p class="book_author">Louis L`Amour</p>
+                </div>
+                <div class="book" data-tooltip="Click to add it to your library!">
+                    <a href=""><img src="https://cdn.dc5.ro/img-prod/177663-0.jpeg" alt=""></a>
+                    <p class="bookTitle">To kill a mockingbird</p> <p>by</p> <p class="book_author">Harper Lee</p>
+                </div>
+            </div>
+
+
+            <div class="all_text" id="Young_adults"><p>Young Adults</p></div>
+            <div class="new_rls_books">
+                <div class="book" data-tooltip="Click to add it to your library!">
+                    <a href=""><img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRgJwIANNfKRY_GudYIYnGVcjsEI-SzBIRTEzlmtkYa2hEq1v1T" alt=""></a>
+                    <p class="bookTitle">The queen of nothing</p> <p>by</p> <p class="book_author">Holly Black</p>
+                </div>
+                <div class="book" data-tooltip="Click to add it to your library!">
+                    <a href=""><img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQeTgmh2jFTcc3bkiWHDN3SdtEWJqFxW2UaFCsjZ26Z0iYihXNu" alt=""></a>
+                    <p class="bookTitle">Children of blood and bone</p> <p>by</p> <p class="book_author">Tomi Adeyemi</p>
+                </div>
+                <div class="book" data-tooltip="Click to add it to your library!">
+                    <a href=""><img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRD-CDKy2UiL8LOZV6u7Y96AmdM-tnoVlaxw8TIczXJFr0jCNpa" alt=""></a>
+                    <p class="bookTitle">A good girl`s guide to murder</p> <p>by</p> <p class="book_author">Holly Jackson</p>
+                </div>
+                <div class="book" data-tooltip="Click to add it to your library!">
+                    <a href=""><img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQtuq5bdY18qEsT6PxNfJbAJSYkli5qxI9abOnfggZ_iUqNnByi" alt=""></a>
+                    <p class="bookTitle">Fire keeper`s daughter</p> <p>by</p> <p class="book_author">Angeline Boulley</p>
+                </div>
+                <div class="book" data-tooltip="Click to add it to your library!">
+                    <a href=""><img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSDdxdzRO55tvtkUeOVYgVk5yStW5kCTzR2QC-ILr7TA_B33lKN" alt=""></a>
+                    <p class="bookTitle">Ellie Haycock is totally normal</p> <p>by</p> <p class="book_author">Gretchen Schreiber</p>
+                </div>
+                <div class="book" data-tooltip="Click to add it to your library!">
+                    <a href=""><img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQTbG6eLVKzOG3PJNWmwnOAexBz25GKtWv_wJEfqFnHVgCZ5o3d" alt=""></a>
+                    <p class="bookTitle">The last bloodcarver</p> <p>by</p> <p class="book_author">Vanessa Le</p>
+                </div>
+            </div>
+
+
+            <div class="all_text" id="Children"><p>Children's</p></div>
+<div class="new_rls_books">
+    <div class="book" data-tooltip="Click to add it to your library!">
+        <a href=""><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmpQnO2AxpFXeDZafGtAP8NTj4zvve2h_FrDSAaEWJK5BlPdpm" alt=""></a>
+        <p class="bookTitle">Where the wild things are</p> <p>by</p> <p class="book_author">Maurice Sendak</p>
+    </div>
+    <div class="book" data-tooltip="Click to add it to your library!">
+        <a href=""><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgdQadD1qqcW4OyTFE-jGA7WIM6IvHs0WHYOVcqzo7zQIDLywD" alt=""></a>
+        <p class="bookTitle">Goodnight moon</p> <p>by</p> <p class="book_author">Clement Hurd</p>
+    </div>
+    <div class="book" data-tooltip="Click to add it to your library!">
+        <a href=""><img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQhWN1lbXEMk_wA20PAqN7l5hdjIQMEHRdvxIrSgCz9_nlyK9Ye" alt=""></a>
+        <p class="bookTitle">If you give a mouse a cookie</p> <p>by</p> <p class="book_author">Laura Numeroff</p>
+    </div>
+    <div class="book" data-tooltip="Click to add it to your library!">
+        <a href=""><img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR6-rLwIZW4YQhwNPgUnL7bc1aC7EC29Z2eKnCaFglxWuuLtZHS" alt=""></a>
+        <p class="bookTitle">The runaway bunny</p> <p>by</p> <p class="book_author">Clement Hurd</p>
+    </div>
+    <div class="book" data-tooltip="Click to add it to your library!">
+        <a href=""><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTw042xzlaGQ0UWPPFwTTPNokCUhkboUArIHNBKzkCGKZN677Kt" alt=""></a>
+        <p class="bookTitle">Ballet shoes</p> <p>by</p> <p class="book_author">Noel Streatfeild</p>
+    </div>
+    <div class="book" data-tooltip="Click to add it to your library!">
+        <a href=""><img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ7t-67nZqtUkW1Ln-NveZYU6TQ7Y_HR2yyrkVRC6Alfwg8HX6R" alt=""></a>
+        <p class="bookTitle">Green eggs and ham</p> <p>by</p> <p class="book_author">Dr. Seuss</p>
+    </div>
+</div>
+
+
+
+
+            <div class="all_text" id="Non_fiction"><p>Non-fiction</p></div>
+<div class="new_rls_books">
+    <div class="book" data-tooltip="Click to add it to your library!">
+        <a href=""><img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1711573377i/171681821.jpg" alt=""></a>
+        <p class="bookTitle">The anxious generation</p> <p>by</p> <p class="book_author">Jonathan Haidt</p>
+    </div>
+    <div class="book" data-tooltip="Click to add it to your library!">
+        <a href=""><img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1692825408i/181346643.jpg" alt=""></a>
+        <p class="bookTitle">The rise and fall of Pete Rose, and the last glory days of baseball</p> <p>by</p> <p class="book_author">Charlie Hustle</p>
+    </div>
+    <div class="book" data-tooltip="Click to add it to your library!">
+        <a href=""><img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1684205823i/126918658.jpg" alt=""></a>
+        <p class="bookTitle">Exvangelicals</p> <p>by</p> <p class="book_author">Sarah McCammon</p>
+    </div>
+    <div class="book" data-tooltip="Click to add it to your library!">
+        <a href=""><img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1695126799i/127305797.jpg" alt=""></a>
+        <p class="bookTitle">Cloistered</p> <p>by</p> <p class="book_author">Catherine Coldstream</p>
+    </div>
+    <div class="book" data-tooltip="Click to add it to your library!">
+        <a href=""><img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1690919153i/177186058.jpg" alt=""></a>
+        <p class="bookTitle">If you can`t take the heat</p> <p>by</p> <p class="book_author">Geraldine DeRuiter</p>
+    </div>
+</div>
+
+<div class="all_text" id="Graphic"><p>Graphic novels</p></div>
+<div class="new_rls_books">
+    <div class="book" data-tooltip="Click to add it to your library!">
+        <a href=""><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRk1JPOH7xycRwgoiuvqQSbhtkPf1RqrFJbBVbe-xeEHOsm5qt_" alt=""></a>
+    </div>
+    <div class="book" data-tooltip="Click to add it to your library!">
+        <a href=""><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKUOkgk-mqLJKEP42uRtii2MBfd2BSXPCQPql30UzEKq3T8cvT" alt=""></a>
+    </div>
+    <div class="book" data-tooltip="Click to add it to your library!">
+        <a href=""><img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSYBwmvE1jDDfEoGqRmOejIbo0uy6EbH1hwT7gDa4TAmJzMuBwp" alt=""></a>
+    </div>
+    <div class="book" data-tooltip="Click to add it to your library!">
+        <a href=""><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPsu3qAzavw_rfKSYB4f9h62WNYcBpj1Kf58hW1kQc1XHufQQn" alt=""></a>
+    </div>
+    <div class="book" data-tooltip="Click to add it to your library!">
+        <a href=""><img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSZf0A4dAxlqvcWKFPZJo-VWFgBjTAxImQYqPxiwj-HCQSVKlEs" alt=""></a>
+    </div>
+    <div class="book" data-tooltip="Click to add it to your library!">
+        <a href=""><img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTQixlk-3oHCfJV04ab1LkiAn7CtECSwHEpbVsXmkPwG1-oaBeb" alt=""></a>
+    </div>
+    <div class="book" data-tooltip="Click to add it to your library!">
+        <a href=""><img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR8cZGIxnug-IwKW20knuRA_XxKusju1tqracEGLAkqehFUHKYz" alt=""></a>
+    </div>
+</div>
+
+
+<div class="all_text" id="Biography"><p>Biography</p></div>
+<div class="new_rls_books">
+    <div class="book" data-tooltip="Click to add it to your library!">
+        <a href=""><img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRS2yOOnANYakOgKOlol4AOVgLaGz8GE_aJyE5L5FbvRH65Gwa0" alt=""></a>
+    </div>
+    <div class="book" data-tooltip="Click to add it to your library!">
+        <a href=""><img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSu_7RWEYGCXPmE_d7SsbNmadx73jxLPu3l113MmhNJ9F2SbCYI" alt=""></a>
+    </div>
+    <div class="book" data-tooltip="Click to add it to your library!">
+        <a href=""><img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQkn8rGS4Z_Kr1o9GEbc6uLSmrnfLswW1mcebOKfMoIH2TOdVkq" alt=""></a>
+    </div>
+    <div class="book" data-tooltip="Click to add it to your library!">
+        <a href=""><img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ8Ih2Pi25sKQ4avbwEEcGytOhmc3tOaUjYtm9Q8Wbfx6sYH_Zz" alt=""></a>
+    </div>
+    <div class="book" data-tooltip="Click to add it to your library!">
+        <a href=""><img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS8zpOESrvF8e5Cr-AF4AQkpUCbYY8qToewwEa2-XxpZPzqyk_I" alt=""></a>
+    </div>
+</div>
+
+<div class="all_text" id="Dystopian"><p>Dystopian</p></div>
+<div class="new_rls_books">
+    <div class="book" data-tooltip="Click to add it to your library!">
+        <a href=""><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_oxsMroSVoK42neEfmewihI3Q67lZDmvLAU8V1WbKrZ7lMN67" alt=""></a>
+    </div>
+    <div class="book" data-tooltip="Click to add it to your library!">
+        <a href=""><img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ66x2zx-tnJ29WIxYoUTbUvUWA9umZ5fpLMmLuXef0FNQG1sl8" alt=""></a>
+    </div>
+    <div class="book" data-tooltip="Click to add it to your library!">
+        <a href=""><img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRPhtcSdVhDvLJZUwclNDIeBnp1iG5P13PpIX6zRUUNnsNuH9hs" alt=""></a>
+    </div>
+    <div class="book" data-tooltip="Click to add it to your library!">
+        <a href=""><img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSC_NjqWb6I7KBDhRsaOW6ryuGTQZNBj2Xm5-OuB8mvyLvxOVdo" alt=""></a>
+    </div>
+    <div class="book" data-tooltip="Click to add it to your library!">
+        <a href=""><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdxXcwx9AjDE1dToAdRDBN6cCIUidwRNuboZsg2HjNZ3GMR9EK" alt=""></a>
+    </div>
+    <div class="book" data-tooltip="Click to add it to your library!">
+        <a href=""><img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRZ23axlt8x4Tz5MD3HBE4VBa2KXZsk52PskiMR8oxsse-RH8IV" alt=""></a>
+    </div>
+</div>
+
+<div class="all_text" id="Action"><p>Action</p></div>
+<div class="new_rls_books">
+    <div class="book" data-tooltip="Click to add it to your library!">
+        <a href=""><img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQsX3li-fswcSvxISaQTLCE9ryB8aGmBtyTWJTAmXi28Bxztp7W" alt=""></a>
+    </div>
+    <div class="book" data-tooltip="Click to add it to your library!">
+        <a href=""><img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSFKHdFYylR4WGdx3NJmTuFk158JM02BoWopXlp_f9pXCbATelz" alt=""></a>
+    </div>
+    <div class="book" data-tooltip="Click to add it to your library!">
+        <a href=""><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqOW8ixVP8ZIpVJ4GmQG-JsAt_xJXBFsf1JPmH9agae2qD_oOf" alt=""></a>
+    </div>
+    <div class="book" data-tooltip="Click to add it to your library!">
+        <a href=""><img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS77EaVY8lhfaVvj-I2lGBU6kehS7WeQ-Cnea8Mx7jMbQJy9WI_" alt=""></a>
+    </div>
+    <div class="book" data-tooltip="Click to add it to your library!">
+        <a href=""><img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSiDS_2osk6LQOFMbsHgtsAJDP02rqES859fl6fZ3QW0k3TkpcZ" alt=""></a>
+    </div>
+    <div class="book" data-tooltip="Click to add it to your library!">
+        <a href=""><img src="https://cdn4.libris.ro/img/pozeprod/29926/29925791-1.jpg" alt=""></a>
+    </div>
+</div>
+
+<div class="all_text" id="History"><p>History</p></div>
+<div class="new_rls_books">
+    <div class="book" data-tooltip="Click to add it to your library!">
+        <a href=""><img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRz5KIzQP1KF3ZLx33trtAOym4DeMPKBqeJ8LfNyl9_cnZByrqB" alt=""></a>
+    </div>
+    <div class="book" data-tooltip="Click to add it to your library!">
+        <a href=""><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-zluUagS0M0CmQt2t3ZbPgM9Oy9lKQZ04rTPFZEmbxD2xmXcO" alt=""></a>
+    </div>
+    <div class="book" data-tooltip="Click to add it to your library!">
+        <a href=""><img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSKvL9gW_r2XR3uI3Uknl_mnMRaoozXZcDZZj7ORb0dUpivFgCF" alt=""></a>
+    </div>
+    <div class="book" data-tooltip="Click to add it to your library!">
+        <a href=""><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQv1OM_jML9ctgV4tP4gOV83ytXXSDNt6l80cMbolcghjSKSZBL" alt=""></a>
+    </div>
+    <div class="book" data-tooltip="Click to add it to your library!">
+        <a href=""><img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSsqLA0SRUbE251H2Ih86Z5ArzwW0q73cBn7HNjsqYBDOGshQO1" alt=""></a>
+    </div>
+</div>
+
+
+        </div>
+    </div>
+    <footer id="about_us">
+        <div class="footer">
+            <div class="footer1">
+                <p>JOIN OUR TEAM</p>
+                <span>Be the first to hear about new releases!</span>
+                <div class="searchbar_footer">
+                    <form id="emailForm" action="/">
+                        <input type="text" id="emailInput" placeholder="Your email" name="Your email">
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer2">	
+                    <div class="footer2_1">
+                        <p>COMPANY</p>
+                        <div>
+                            <span>About</span>
+                            <div class="instagram">
+                                <a href="https://www.instagram.com/alexandraec14/">
+                                    <span>alexandraec14</span>
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="">
+                                </a>
+                            </div>
+                            <div class="whatsapp">
+                                <span>+40748657832</span>
+                                <img src="photos/whatsapp.png" alt="">
+                            </div>
+                            <div class="email">
+                                <span>cioritaelena14@gmail.com</span>
+                                <img src="photos/Gmail-Logo.png" style="width: 35px;" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer2_2">
+                        <span>GENERAL</span>
+                        <span>Terms of use</span>
+                        <span>Privacy Policy</span>
+                        <span id="copyright">&copy; Pages&More 2024-2034</span>
+                    </div>
+                    
+            </div>
+        </div>
+        </footer>
+        <div id="tooltip" class="tooltip"></div>
+        <script src="script.js"></script>
+    </body>
+    </html>

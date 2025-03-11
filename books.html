@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pages&More</title>
+    <link href="style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar_container">
+            <img src="photos/logo.png" id="navbar_logo" alt="">
+            <div class="searchbar">
+                <form action="/">
+                    <input type="text" placeholder="Search..." name="Your book"> 
+                </form>
+            </div>
+            <ul class="navbar_menu">
+                <li class="navbar_btn">
+                    <a href="#" id="signupBtn" class="button">Sign Up</a>
+                </li>
+                <li class="navbar_btn">
+                    <a href="#" id="loginBtn" class="button">Log In</a>
+                </li>
+                <li class="navbar_btn" id="userProfile" style="display: none;">
+                    <span id="usernameDisplay"></span>
+                    <a href="#" id="logoutBtn" class="button">Log Out</a>
+                </li>
+            </ul>
+        </div>
+        
+
+        <div id="signupModal" class="modal">
+            <div class="modal-content">
+                <span id="closeSignup" class="close">&times;</span>
+                <h2>Sign Up</h2>
+                <form id="signupForm">
+                    <label for="signupUsername">Username:</label>
+                    <input type="text" id="signupUsername" name="username" required>
+                    <label for="signupPassword">Password:</label>
+                    <input type="password" id="signupPassword" name="password" required>
+                    <button type="submit">Sign Up</button>
+                    <p id="signupStatus"></p>
+                </form>
+            </div>
+        </div>
+    
+        <div id="loginModal" class="modal">
+            <div class="modal-content">
+                <span id="closeLogin" class="close">&times;</span>
+                <h2>Log In</h2>
+                <form id="loginForm">
+                    <label for="loginUsername">Username:</label>
+                    <input type="text" id="loginUsername" name="username" required>
+                    <label for="loginPassword">Password:</label>
+                    <input type="password" id="loginPassword" name="password" required>
+                    <button type="submit">Log In</button>
+                    <p id="loginStatus"></p>
+                </form>
+            </div>
+        </div>
+
+
+    </nav>
+    <nav class="navbar2">
+        <div class="navbar_container2">
+            <div class="dropdown_menu">
+                <span><img src="photos/menu.png" alt="" id="menu_icon"></span>
+                <div class="dropdown_contents">
+                    <a href="project.html" class="dropdown_item">Home</a>                    
+                    <a href="books.html" class="dropdown_item">My Books</a>
+                    <a href="fav.html" class="dropdown_item">Favourites</a>
+                    <a href="genres.html" class="dropdown_item">Genres</a>
+                    <a href="#about_us" class="dropdown_item">About Us</a>
+                </div>
+            </div>
+            <ul class="navbar_menu2">
+             <li class="navbar_item">
+                 <a href="project.html" class="navbar_links">Home</a>
+             </li>
+             <li class="navbar_item">
+                 <a href="books.html" class="navbar_links">My Books</a>
+             </li>
+             <li class="navbar_item">
+                 <a href="fav.html" class="navbar_links">Favourites</a>
+             </li>
+             <li class="navbar_item">
+                 <a href="genres.html" class="navbar_links">Genres</a>
+             </li>
+            </ul> 
+     </div>
+    </nav>
+
+
+
+    <div class="main_books">
+        <div class="menu_books">
+            <p id="accountName">ACCOUNT NAME</p>
+            <p>My loans</p>
+            <p>Loan history</p>
+            <p>Sign out</p>
+            <p>READING LOG</p>
+            <p>Currently reading:0</p>
+            <p>Want to read:0</p>
+            <p>Already read:0</p>
+            <p class="stats" style="text-decoration: none;cursor: pointer;">My reading stats</p>
+        </div>
+        <div class="popup">
+            Your books:
+        </div>
+        <div class="recs">
+            <section>
+                <h1>Welcome!</h1>
+                <p>You have not checked out any books at this moment.</p>
+            </section>
+            <section>
+                <h2>Books you're waiting for</h2>
+                <p>You are not waiting for any books at this moment.</p>
+            </section>
+            <section>
+                <h3>Recommendations</h3>
+                <p>Looking for a book to read? Check our recommendations for you:</p>
+                <div class="new_rls_books">
+                    <div class="book">
+                        <a href=""><img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1415428227i/20518872._SX300_.jpg" alt=""></a>
+                        <p>The Three-Body Problem
+                             by Liu Cixin</p>
+                    </div>
+                    <div class="book">
+                        <a href=""><img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1710615468i/176443093._SX300_.jpg" alt=""></a>
+                        <p>Sociopath
+                             by Patric Gagne
+                            </p>
+                    </div>
+                    <div class="book">
+                        <a href=""><img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1672676191i/75513900._SX300_.jpg" alt=""></a>
+                        <p>Powerless
+                             by Lauren Roberts</p>
+                    </div>
+                    <div class="book">
+                        <a href=""><img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1690490514i/165940202._SX300_.jpg" alt=""></a>
+                        <p>A Fate Inked in Blood
+                             by Danielle L. Jensen</p>
+                    </div>
+                    <div class="book">
+                        <a href=""><img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1693932662i/176443330._SX300_.jpg" alt=""></a>
+                        <p>Daughter of Mine
+                             by Megan Miranda
+                            </p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+
+
+
+    <footer id="about_us">
+        <div class="footer">
+            <div class="footer1">
+                <p>JOIN OUR TEAM</p>
+                <span>Be the first to hear about new releases!</span>
+                <div class="searchbar_footer">
+                    <form id="emailForm" action="/">
+                        <input type="text" id="emailInput" placeholder="Your email" name="Your email">
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer2">	
+                    <div class="footer2_1">
+                        <p>COMPANY</p>
+                        <div>
+                            <span>About</span>
+                            <div class="instagram">
+                                <a href="https://www.instagram.com/alexandraec14/">
+                                    <span>alexandraec14</span>
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="">
+                                </a>
+                            </div>
+                            <div class="whatsapp">
+                                <span>+40748657832</span>
+                                <img src="photos/whatsapp.png" alt="">
+                            </div>
+                            <div class="email">
+                                <span>cioritaelena14@gmail.com</span>
+                                <img src="photos/Gmail-Logo.png" style="width: 35px;" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer2_2">
+                        <span>GENERAL</span>
+                        <span>Terms of use</span>
+                        <span>Privacy Policy</span>
+                        <span id="copyright">&copy; Pages&More 2024-2034</span>
+                    </div>
+                    
+            </div>
+        </div>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+    </html>
